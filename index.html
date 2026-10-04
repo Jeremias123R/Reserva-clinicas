@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Demo | Reservas Clínica</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <span class="demo">
+            DEMO
+        </span>
+
+        <h1>
+            Reserva tu cita
+        </h1>
+
+        <p>
+            Sistema de reservas para clínica
+        </p>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             FORMULARIO
+        ========================== -->
+
+        <form id="formReserva">
+
+
+            <div class="campo">
+
+                <label for="nombre">
+                    Nombre del paciente
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Escribe un nombre ficticio"
+                >
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="telefono">
+                    Teléfono
+                </label>
+
+                <input
+                    type="tel"
+                    id="telefono"
+                    placeholder="Ej. 70000000"
+                >
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="servicio">
+                    Servicio
+                </label>
+
+                <select id="servicio">
+
+                    <option value="">
+                        Selecciona un servicio
+                    </option>
+
+                    <option value="Electroencefalograma">
+                        Electroencefalograma
+                    </option>
+
+                    <option value="Consulta médica">
+                        Consulta médica
+                    </option>
+
+                    <option value="Laboratorio">
+                        Laboratorio
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- =========================
+                 MÉDICO
+            ========================== -->
+
+            <div class="campo">
+
+                <label for="medico">
+                    Médico
+                </label>
+
+                <select id="medico">
+
+                    <option value="">
+                        Selecciona un médico
+                    </option>
+
+                    <option value="Dr. Carlos Méndez">
+                        Dr. Carlos Méndez
+                    </option>
+
+                    <option value="Dra. Laura Fernández">
+                        Dra. Laura Fernández
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="fecha">
+                    Fecha
+                </label>
+
+                <input
+                    type="date"
+                    id="fecha"
+                >
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="hora">
+                    Horario
+                </label>
+
+                <select id="hora">
+
+                    <option value="">
+                        Selecciona un horario
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button type="submit">
+                Confirmar reserva
+            </button>
+
+
+        </form>
+
+
+        <!-- =========================
+             CONFIRMACIÓN
+        ========================== -->
+
+        <div id="confirmacion"></div>
+
+
+        <!-- =========================
+             RESERVAS
+        ========================== -->
+
+        <section class="reservas">
+
+            <h2>
+                Reservas registradas
+            </h2>
+
+            <div id="listaReservas"></div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
